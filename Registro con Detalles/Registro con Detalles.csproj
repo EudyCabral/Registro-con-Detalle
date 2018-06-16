@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="ENTIDADES\Grupos.cs" />
     <Compile Include="ENTIDADES\GruposDetalles.cs" />
     <Compile Include="ENTIDADES\Personas.cs" />

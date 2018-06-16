@@ -15,10 +15,24 @@ namespace Registro_con_Detalles.ENTIDADES
         public int PersonaId { get; set; }
         public string Cargo { get; set; }
 
-        [ForeignKey("Id")]
+        [ForeignKey("PersonaId")]
 
+        public virtual Personas Personas { get; set; }
+        public GruposDetalles()
+        {
+            Id = 0;
+            GruposId = 0;
 
+        }
 
+        public GruposDetalles(int id, int gruposId, int personaId, string cargo)
+        {
+            this.Id = id;
+            this.GruposId = gruposId;
+            this.PersonaId = personaId;
+            this.Cargo = cargo;
+           
+        }
     }
 
 }
