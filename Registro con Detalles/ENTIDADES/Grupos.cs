@@ -14,12 +14,16 @@ namespace Registro_con_Detalles.ENTIDADES
         public string Descripcion { get; set; }
         public int Cantidades { get; set; }
 
+        public virtual ICollection<GruposDetalles> Detalle { get; set; }
+
         public Grupos()
         {
-            GruposId = 0;
-            Fecha = DateTime.Now;
-            Descripcion = string.Empty;
-            Cantidades = 0;
+            this.Detalle = new List<GruposDetalles>();
+        }
+
+        public void AñadirDetalle(int id, int GruposId, int PersonaId, string Cargo)
+        {
+            this.Detalle.Add(new GruposDetalles(id, GruposId, PersonaId, Cargo));
         }
     }
 }
