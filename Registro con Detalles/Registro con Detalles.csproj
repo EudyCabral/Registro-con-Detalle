@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\Repositorio.cs" />
     <Compile Include="ENTIDADES\Grupos.cs" />
     <Compile Include="ENTIDADES\GruposDetalles.cs" />
     <Compile Include="ENTIDADES\Personas.cs" />
