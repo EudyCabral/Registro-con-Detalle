@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\GruposBLL.cs" />
+    <Compile Include="BLL\PersonasBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\Repositorio.cs" />
@@ -89,7 +91,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="DAL\SCRIPTS\" />
     <Folder Include="UI\CONSULTAR\" />
     <Folder Include="UI\REGISTROS\" />
