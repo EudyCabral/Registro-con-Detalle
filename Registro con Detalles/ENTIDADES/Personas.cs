@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -7,7 +8,7 @@ namespace Registro_con_Detalles.ENTIDADES
 {
     public class Personas
     {
-      
+        [Key]
         public int PersonaId { get; set; }
         public DateTime Fecha { get; set; }
         public string Nombres { get; set; }

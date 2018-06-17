@@ -66,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\REGISTROS\Registro Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\REGISTROS\Registro Persona.Designer.cs">
+      <DependentUpon>Registro Persona.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,8 +84,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\REGISTROS\Registro Persona.resx">
+      <DependentUpon>Registro Persona.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Registro_con_Detalles.ENTIDADES.Personas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,9 +101,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAL\SCRIPTS\" />
     <Folder Include="UI\CONSULTAR\" />
-    <Folder Include="UI\REGISTROS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\SCRIPTS\Scripts.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
